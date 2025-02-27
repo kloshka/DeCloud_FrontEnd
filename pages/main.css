@@ -42,8 +42,78 @@ body {
     align-items: center;
 }
 
+/*
+.gallery{
+    margin: 80px 0 0 0;
+    padding: 20px 40px 0 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    max-height: 480px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
 
+.gallery__item{
+    width: 150px;
+    height: 150px;
+    background-color: gainsboro;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
 
+.gallery__cross-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;      
+    height: 30px;
+    opacity: 0;
+    background-image: url('../images/cross-button-game-controller-svgrepo-com.svg');
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery__item:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery__item:hover .gallery__cross-icon {
+    opacity: 1; 
+    background-image: url('../images/cross-button-game-controller-svgrepo-com.svg');
+}
+
+.gallery__item:hover .gallery__cross-icon:hover {
+    filter: brightness(0.7);
+}
+.buttons{
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.buttons__cross:hover{
+    filter: brightness(0.7);
+}
+
+.buttons__processing{
+    width: 295px;
+    height: 90px;
+    background: linear-gradient(to bottom, #0D99FF, #5ABAFF);
+    font-size: 20px;
+    font-family: GothamM;
+    color: white;
+    border: 0px;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.buttons__processing:hover{
+    filter: brightness(0.7);
+}
 /*
 .header{
     width: 100%;

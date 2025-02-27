@@ -1,0 +1,15 @@
+.buttons__processing{
+    width: 295px;
+    height: 90px;
+    background: linear-gradient(to bottom, #0D99FF, #5ABAFF);
+    font-size: 20px;
+    font-family: GothamM;
+    color: white;
+    border: 0px;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.buttons__processing:hover{
+    filter: brightness(0.7);
+}

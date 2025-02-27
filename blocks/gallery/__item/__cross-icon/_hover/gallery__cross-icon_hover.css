@@ -1,0 +1,4 @@
+.gallery__item:hover .gallery__cross-icon {
+    opacity: 1;
+    background-image: url('../../../../../images/cross-button-game-controller-svgrepo-com.svg');
+}

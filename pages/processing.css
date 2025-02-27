@@ -1,0 +1,38 @@
+/* Блок header */
+@import url("../blocks/header/header.css");
+
+/* Блок logo */
+@import url("../blocks/logo/logo.css");
+@import url("../blocks/logo/__text/logo__text.css");
+
+/* Блок nav */
+@import url("../blocks/nav/nav.css");
+@import url("../blocks/nav/__item/nav__item.css");
+
+/* Блок authentication */
+@import url("../blocks/authentication/authentication.css");
+@import url("../blocks/authentication/__link/authentication__link.css");
+@import url("../blocks/authentication/__link/_colored/authentication__link_colored.css");
+
+/* gallery */
+@import url("../blocks/gallery/gallery.css");
+@import url("../blocks/gallery/__item/gallery__item.css");
+@import url("../blocks/gallery/__item/__cross-icon/gallery__cross-icon.css");
+@import url("../blocks/gallery/__item/_hover/gallery__item_hover.css");
+@import url("../blocks/gallery/__item/__cross-icon/_hover/gallery__cross-icon_hover.css");
+@import url("../blocks/gallery/__item/__cross-icon/_hover/_hover/gallery__cross-icon_hover_hover.css");
+
+
+/* buttons */
+@import url("../blocks/buttons/buttons.css");
+@import url("../blocks/buttons/__cross/buttons__cross.css");
+@import url("../blocks/buttons/__processing/buttons__processing.css");
+
+body {
+    margin: 0;
+    min-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
