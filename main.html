@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/fonts.css">
+    <link rel="stylesheet" href="pages/main.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="logo">
+            <img class="logo__image" src="images/logo.svg" alt="Логотип"/>
+            <h1 class="logo__text">DeCloud</h1>
+        </div>
+        <div class="nav">
+            <a class="nav__item" href="#">Обработка</a>
+            <a class="nav__item" href="#">О нас</a>
+            <a class="nav__item" href="#">История</a>
+        </div>
+        <div class="authentication">
+            <a class="authentication__link">Вход</a>
+            <a class="authentication__link authentication__link_colored">Регистрация</a>
+        </div>
+    </header>
+    <section class="section">
+        <h2 class="section__title">Удалить облака с изображения</h2>
+        <div class="upload">
+            <img src="images/upload.svg" class="upload__icon" alt="Загрузите изображения"/>
+            <label class="upload__button">
+                <input type="file" class="upload__input"/>
+                ВЫБЕРИТЕ ФАЙЛЫ
+            </label>
+            <p class="upload__text">или перетащите файл сюда</p>
+        </div>        
+        <div class="info">
+            <div class="info__description">
+                Спутниковые снимки часто загрязнены облаками, что затрудняет их анализ. 
+                Мы предлагаем идеальный инструмент для тех, кто хочет удалить облака со спутниковых изображений. 
+                Он прост, быстр и бесплатен, не требует регистрации и не накладывает водяные знаки на изображения.
+            </div>
+            <ul class="info__features">
+                <li class="info__feature">Быстрая обработка изображений</li>
+                <li class="info__feature">Работает через браузер</li>
+            </ul>
+            <img src="images/icons.svg" class="info__image"/>
+            <div class="info__steps-container">
+                <p class="info__steps-title">Как удалить облака с изображений</p>
+                <ol class="info__steps">
+                    <li class="info__steps-item">Импортируйте или перетащите изображения в обработчик</li>
+                    <li class="info__step-item">Нажмите начать обработку</li>
+                    <li class="info__step-item">Загрузите изображения</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

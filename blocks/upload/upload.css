@@ -1,0 +1,26 @@
+.upload{
+    position: relative;
+    margin: 26px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D99FF; 
+    border-radius: 12px; 
+    padding: 40px;
+    box-sizing: border-box;
+    height: max(244px, calc(100vh*19/100));
+    max-width: calc((100vh * 19 / 100 * 50 / 23) + (11352px / 23));
+}
+
+.upload::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px dashed rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    pointer-events: none;
+  }

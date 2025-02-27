@@ -1,0 +1,206 @@
+/* Блок header */
+@import url("../blocks/header/header.css");
+
+/* Блок logo */
+@import url("../blocks/logo/logo.css");
+@import url("../blocks/logo/__text/logo__text.css");
+
+/* Блок nav */
+@import url("../blocks/nav/nav.css");
+@import url("../blocks/nav/__item/nav__item.css");
+
+/* Блок authentication */
+@import url("../blocks/authentication/authentication.css");
+@import url("../blocks/authentication/__link/authentication__link.css");
+@import url("../blocks/authentication/__link/_colored/authentication__link_colored.css");
+
+/* Блок section */
+@import url("../blocks/section/section.css");
+@import url("../blocks/section/__title/section__title.css");
+
+/* Блок upload */
+@import url("../blocks/upload/upload.css");
+@import url("../blocks/upload/__button/upload__button.css");
+@import url("../blocks/upload/__icon/upload__icon.css");
+@import url("../blocks/upload/__input/upload__input.css");
+@import url("../blocks/upload/__text/upload__text.css");
+
+/* Блок info */
+@import url("../blocks/info/info.css");
+@import url("../blocks/info/__description/info__description.css");
+@import url("../blocks/info/__features/info__features.css");
+@import url("../blocks/info/__feature/feature.css");
+@import url("../blocks/info/__steps/info__steps.css");
+@import url("../blocks/info/__steps-title/info__steps-title.css");
+@import url("../blocks/info/__steps-container/info__steps-container.css");
+
+body {
+    margin: 0;
+    min-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*
+.header{
+    width: 100%;
+    height: min(70px, calc(100vh / 100 * 7.7));
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-shadow: 0px 5px 3px -1px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 0px 5px 3px -1px rgba(0, 0, 0, 0.49);
+    box-shadow: 0px 5px 3px -1px rgba(0, 0, 0, 0.49);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+}
+
+.logo__text{
+    font-family: GothamM;
+    font-size: 48px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    font-family: GothamL;
+    font-size: 24px;
+}
+
+.nav__item{
+    text-decoration: none;
+    color: black;
+}
+
+.authentication{
+    display: flex;
+    column-gap: 22px;
+    font-family: GothamL;
+    font-size: 20px;
+    align-items: center;
+}
+.authentication__link{
+    text-decoration: none; 
+}
+.authentication__link_colored{
+    border-radius: 15px;
+    background-color: #BDE6FF;
+    padding: 7px 18px;
+}
+
+.section{
+    margin: 0 auto;
+    width: 900px;
+}
+
+.section__title{
+    margin-top: 40px;
+    font-family: GothamL;
+    font-size: 32px;
+    text-align: center;
+}
+
+.upload{
+    position: relative;
+    margin: 26px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D99FF; 
+    border-radius: 12px; 
+    padding: 40px;
+    box-sizing: border-box;
+    height: max(244px, calc(100vh*19/100));
+    max-width: calc((100vh * 19 / 100 * 50 / 23) + (11352px / 23));
+}
+.upload::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px dashed rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    pointer-events: none;
+  }
+
+.upload__icon{
+    width: 43px;
+    margin-bottom: 20px;
+}
+
+.upload__button {
+    background: white;
+    color: black;
+    font-family: GothamM;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.upload__input {
+    display: none;
+}
+
+.upload__text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 38px;
+    font-family: GothamL;
+    line-height: 30px;
+    font-size: 16px;
+    row-gap: 29px;
+}
+
+.info__description{
+    width: 560px;
+    height: fit-content;
+}
+
+.info__features{
+    width: fit-content;
+    padding: 0px;
+    margin: 0 0 0 auto;
+}
+.info__feature{
+    list-style-type: none;
+}
+
+.info__feature::before{
+    content:url("../images/emojione_white-heavy-check-mark.svg");
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 8px; 
+}
+
+.info__steps-container{
+    margin: 0 0 0 auto;
+}
+
+.info__steps-title{
+    margin: 0;
+}
+
+.info__steps{
+    margin: 0;
+    padding-left: 20px;
+}
