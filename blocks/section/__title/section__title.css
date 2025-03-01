@@ -1,6 +1,7 @@
 .section__title{
-    margin-top: 40px;
+    margin-top: 13vh;
     font-family: GothamL;
-    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 500;
     text-align: center;
 }

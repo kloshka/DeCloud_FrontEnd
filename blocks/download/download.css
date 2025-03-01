@@ -1,0 +1,14 @@
+.download{
+    position: static;
+    margin: 26px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0D99FF; 
+    border-radius: 8px; 
+    padding: auto;
+    box-sizing: border-box;
+    height: 8vh;
+    width: 45vh;
+}

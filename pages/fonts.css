@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/gotham-pro-regular.woff2') format('woff2');
+}
+
+@font-face {
     src: url(/fonts/gothampro_light.ttf);
     font-family: 'GothamL'; 
 }

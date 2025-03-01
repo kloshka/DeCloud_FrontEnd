@@ -1,0 +1,48 @@
+/* Блок header */
+@import url("../blocks/header/header.css");
+
+/* Блок logo */
+@import url("../blocks/logo/logo.css");
+@import url("../blocks/logo/__text/logo__text.css");
+
+/* Блок nav */
+@import url("../blocks/nav/nav.css");
+@import url("../blocks/nav/__item/nav__item.css");
+
+/* Блок authentication */
+@import url("../blocks/authentication/authentication.css");
+@import url("../blocks/authentication/__link/authentication__link.css");
+@import url("../blocks/authentication/__link/_colored/authentication__link_colored.css");
+
+/* Блок section */
+@import url("../blocks/section/section.css");
+@import url("../blocks/section/__title/section__title.css");
+
+
+/* Блок download */
+@import url('../blocks/download/download.css');
+@import url('../blocks/download/__button/download__button.css');
+@import url('../blocks/download/__icon/download__icon.css');
+
+/* Блок continue-area */
+@import url('../blocks/continue-area/continue-area.css');
+@import url('../blocks/continue-area/__text/continue-area__text.css');
+
+/* Блок back-to-main */
+@import url('../blocks/back-to-main/back-to-main.css');
+@import url('../blocks/back-to-main/__button/back-to-main__button.css');
+
+/* Шрифты */
+@import url('fonts.css');
+
+body {
+    margin: 0;
+    min-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    font-family: 'Gotham Pro' !important;
+}
