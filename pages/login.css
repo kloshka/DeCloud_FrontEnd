@@ -1,0 +1,91 @@
+@import url("../blocks/logo/logo.css");
+
+.page {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.login-page {
+    margin-top: 163px;
+}
+
+/* ВХОД */
+.login {
+    width: 611px;
+    text-align: center;
+}
+
+.login__title {
+    font-size: 36px;
+    margin: 0 0 14px 0;
+}
+
+.login__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login__label {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.login__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.login__icon--email {
+    background: url("../images/email.svg") no-repeat center;
+}
+
+.login__icon--password {
+    background: url("../images/lock.svg") no-repeat center;
+}
+
+.login__input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+}
+
+.login__button {
+    width: 190px;
+    background-color: #4da6ff;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.login__button:hover {
+    background-color: #007acc;
+}
+
+.login__footer {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.login__link {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.login__link:hover {
+    text-decoration: underline;
+}
