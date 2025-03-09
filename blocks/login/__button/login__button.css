@@ -1,0 +1,12 @@
+.login__button{
+    font-family: GothamM;
+    width: 190px;
+    background-color: #4da6ff;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 24px;
+}
