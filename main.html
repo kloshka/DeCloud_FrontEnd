@@ -10,30 +10,28 @@
 </head>
 <body class="body">
     <header class="header">
-        <div class="logo">
+        <a href="main.html" class="logo">
             <img class="logo__image" src="images/logo.svg" alt="Логотип"/>
             <h1 class="logo__text">DeCloud</h1>
-        </div>
+        </a>
         <div class="nav">
-            <a class="nav__item" href="#">Обработка</a>
+            <a class="nav__item" href="processing.html">Обработка</a>
             <a class="nav__item" href="#">О нас</a>
-            <a class="nav__item" href="#">История</a>
+            <a class="nav__item" href="history.html">История</a>
         </div>
         <div class="authentication">
-            <a class="authentication__link">Вход</a>
-            <a class="authentication__link authentication__link_colored">Регистрация</a>
+            <a href="login.html" class="authentication__link">Вход</a>
+            <a href="registration.html" class="authentication__link authentication__link_colored">Регистрация</a>
         </div>
     </header>
     <section class="section">
         <h2 class="section__title">Удалить облака с изображения</h2>
-        <div class="upload">
+        <label class="upload">
+            <input type="file" class="upload__input" style="display: none;" />
             <img src="images/upload.svg" class="upload__icon" alt="Загрузите изображения"/>
-            <label class="upload__button">
-                <input type="file" class="upload__input"/>
-                ВЫБЕРИТЕ ФАЙЛЫ
-            </label>
+            <div class="upload__button">ВЫБЕРИТЕ ФАЙЛЫ</div>
             <p class="upload__text">или перетащите файл сюда</p>
-        </div>        
+        </label>
         <div class="info">
             <div class="info__description">
                 Спутниковые снимки часто загрязнены облаками, что затрудняет их анализ. 
