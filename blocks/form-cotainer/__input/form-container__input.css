@@ -1,0 +1,7 @@
+.form-container__input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+}

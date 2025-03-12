@@ -3,41 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/alert.css">
     <link rel="stylesheet" href="pages/fonts.css">
-    <link rel="stylesheet" href="pages/registration.css">
-    <title>Регистрация</title>
+    <link rel="stylesheet" href="pages/form.css">
+    <title>Регистрация</title> <!-- Измени заголовок на "Регистрация" для другой страницы -->
 </head>
 <body class="page">
-    <div class="logo registration-page">
+    <div class="logo logo_form">
         <img class="logo__image" src="images/logo.svg" alt="Логотип">
         <h1 class="logo__text">DeCloud</h1>
     </div>
     
-    <div class="registration">
-        <h2 class="registration__title">Создать учетную запись</h2>
-        <form class="registration__form" id="registration-form">
-            <div class="registration__fields">
-                <label class="registration__label" for="name">
-                    <img src="images/human.svg" class="registration__icon registration__icon--user"></img>
-                    <input type="text" class="registration__input" required minlength="3" maxlength="20" id="name" placeholder="Имя">
+    <div class="form-container">
+        <h2 class="form-container__title">Создать учетную запись</h2> 
+        <form class="form-container__form" id="auth-form">
+            <div class="form-container__fields">
+                <label class="form-container__label">
+                    <img src="images/email.svg" class="form-container__icon">
+                    <input type="email" class="form-container__input" required placeholder="Почта">
                 </label>
-                <label class="registration__label" for="surname">
-                    <img src="images/human.svg" class="registration__icon registration__icon--user"></img>
-                    <input type="text" class="registration__input" required minlength="3" maxlength="20" id="surname" placeholder="Фамилия">
-                </label>
-                <label class="registration__label" for="email">
-                    <img src="images/email.svg" class="registration__icon registration__icon--email"></img>
-                    <input type="email" class="registration__input" required id="email" placeholder="Почта">
-                </label>
-                <label class="registration__label" for="password">
-                    <img src="images/lock.svg" class="registration__icon registration__icon--password"></img>
-                    <input type="password" class="registration__input" required id="password" minlength="4" maxlength="30" placeholder="Пароль">
+                <label class="form-container__label">
+                    <img src="images/lock.svg" class="form-container__icon">
+                    <input type="password" class="form-container__input" required minlength="4" maxlength="30" placeholder="Пароль">
                 </label>
             </div>
-            <button class="registration__button" type="submit">Регистрация</button>
-            <p class="registration__footer">
-                Вы уже зарегистрированы? <a class="registration__link" href="#">Войти</a>
-            </p>
+            <button class="form-container__button" type="submit">Регистрация</button> 
+            <p class="form-container__footer">
+                Вы уже зарегистрированы? <a class="form-container__link" href="#">Войти</a>
+            </p> 
+            <!-- Для регистрации: "Вы уже зарегистрированы? <a href='#'>Войти</a>" -->
         </form>
     </div>
 </body>

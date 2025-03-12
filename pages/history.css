@@ -1,0 +1,163 @@
+/* Блок header */
+@import url("../blocks/header/header.css");
+
+/* Блок logo */
+@import url("../blocks/logo/logo.css");
+@import url("../blocks/logo/__text/logo__text.css");
+
+/* Блок nav */
+@import url("../blocks/nav/nav.css");
+@import url("../blocks/nav/__item/nav__item.css");
+
+/* Блок authentication */
+@import url("../blocks/authentication/authentication.css");
+@import url("../blocks/authentication/__link/authentication__link.css");
+@import url("../blocks/authentication/__link/_colored/authentication__link_colored.css");
+
+@import url("../blocks/history/history.css"); /* Основной блок истории */
+@import url("../blocks/history-date/history-date.css"); /* Блок с датами истории */
+@import url("../blocks/history-date/__header/history-date__header.css"); /* Заголовок секции */
+@import url("../blocks/history-date/__text/history-date__text.css"); /* Текст даты */
+@import url("../blocks/history-date/__download-btn/history-date__download-btn.css"); /* Кнопка скачивания всех */
+@import url("../blocks/history-date/__images/history-date__images.css"); /* Галерея изображений */
+@import url("../blocks/history-date/__item/history-date__item.css"); /* Элемент списка изображений */
+@import url("../blocks/history-date/__media/history-date__media.css"); /* Медиа-блок изображения */
+@import url("../blocks/history-date/__frame/history-date__frame.css"); /* Контейнер изображения */
+@import url("../blocks/history-date/__caption/history-date__caption.css"); /* Подпись к изображению */
+@import url("../blocks/history-date/__actions/history-date__actions.css"); /* Контейнер с кнопками */
+@import url("../blocks/history-date/__delete/history-date__delete.css"); /* Кнопка удаления */
+@import url("../blocks/history-date/__download/history-date__download.css"); /* Кнопка скачивания */
+body {
+    margin: 0;
+    min-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*
+.history {
+    width: 60%;
+    max-width: 1200px;
+    min-width: 880px;
+    margin: 0 auto;
+    font-family: 'GothamL', sans-serif;
+  }
+  
+  .history__title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .history-date {
+    margin-bottom: 30px;
+  }
+  
+  .history-date__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #dceeff;
+    padding: 10px 15px;
+    border-radius: 25px;
+  }
+  
+  .history-date__text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  
+  .history-date__download-btn {
+    background: url('../images/downloadAll.svg') no-repeat center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Список изображений */
+  .history-date__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px 90px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .history-date__item {
+    position: relative;
+    background: #F5F5F5;
+    width: 120px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  
+ 
+.history-date__media {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .history-date__frame {
+    width: 80px;
+    height: 90px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .history-date__caption {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0 0 0;
+    color: #333;
+  }
+  
+  .history-date__frame img {
+    width: 60%;
+    height: auto;
+  }
+  
+  .history-date__actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .history-date__actions button {
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .history-date__delete::before {
+    content: url('../images/delete.svg');
+  }
+  
+  .history-date__download::before {
+    content: url('../images/downloadmini.svg');
+  }
+  

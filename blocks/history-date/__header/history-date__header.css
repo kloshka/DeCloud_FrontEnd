@@ -1,0 +1,8 @@
+.history-date__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #dceeff;
+    padding: 10px 15px;
+    border-radius: 25px;
+  }

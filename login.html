@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/alert.css">
     <link rel="stylesheet" href="pages/fonts.css">
-    <link rel="stylesheet" href="pages/login.css">
-    <title>Вход</title>
+    <link rel="stylesheet" href="pages/form.css">
+    <title>Вход</title> 
 </head>
 <body class="page">
-    <div class="logo login-page">
+    <div class="logo logo_form">
         <img class="logo__image" src="images/logo.svg" alt="Логотип">
         <h1 class="logo__text">DeCloud</h1>
     </div>
     
-    <div class="login">
-        <h2 class="login__title">Войти в учетную запись</h2>
-        <form class="login__form" id="login-form">
-            <div class="login__fields">
-                <label class="login__label" for="email">
-                    <img src="images/email.svg" class="login__icon login__icon--email"></img>
-                    <input type="email" class="login__input" required id="email" placeholder="Почта">
+    <div class="form-container">
+        <h2 class="form-container__title">Войти в учетную запись</h2>
+        <form class="form-container__form" id="auth-form">
+            <div class="form-container__fields">
+                <label class="form-container__label">
+                    <img src="images/email.svg" class="form-container__icon">
+                    <input type="email" class="form-container__input" required placeholder="Почта">
                 </label>
-                <label class="login__label" for="password">
-                    <img src="images/lock.svg" class="login__icon login__icon--password"></img>
-                    <input type="password" class="login__input" required id="password" minlength="4" maxlength="30" placeholder="Пароль">
+                <label class="form-container__label">
+                    <img src="images/lock.svg" class="form-container__icon">
+                    <input type="password" class="form-container__input" required minlength="4" maxlength="30" placeholder="Пароль">
                 </label>
             </div>
-            <button class="login__button" type="submit">Регистрация</button>
-            <p class="login__footer">
-                У Вас нет учетной записи? <a class="login__link" href="#">Создать учетную запись</a>
-            </p>
+            <button class="form-container__button" type="submit">Войти</button> 
+            <p class="form-container__footer">
+                У Вас нет учетной записи? <a class="form-container__link" href="#">Создать учетную запись</a>
+            </p> 
         </form>
     </div>
 </body>
