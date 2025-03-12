@@ -15,6 +15,7 @@
 @import url("../blocks/authentication/__link/_colored/authentication__link_colored.css");
 
 @import url("../blocks/history/history.css"); /* Основной блок истории */
+@import url("../blocks/history/__title/history__title.css"); /* Основной блок истории */
 @import url("../blocks/history-date/history-date.css"); /* Блок с датами истории */
 @import url("../blocks/history-date/__header/history-date__header.css"); /* Заголовок секции */
 @import url("../blocks/history-date/__text/history-date__text.css"); /* Текст даты */
