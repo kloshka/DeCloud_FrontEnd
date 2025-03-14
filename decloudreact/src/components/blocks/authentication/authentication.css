@@ -1,0 +1,7 @@
+.authentication{
+    display: flex;
+    column-gap: 22px;
+    font-family: GothamL;
+    font-size: 20px;
+    align-items: center;
+}

@@ -1,0 +1,15 @@
+.back-to-main {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white; 
+    border-radius: 6px; 
+    padding: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    height: 6vh;
+    width: 40vh;
+}

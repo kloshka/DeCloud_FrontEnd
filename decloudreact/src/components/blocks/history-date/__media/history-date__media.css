@@ -1,0 +1,6 @@
+.history-date__media {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

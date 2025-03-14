@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../assets/fonts/gotham-pro-regular.woff2') format('woff2');
+}
+
+@font-face {
+    src: url('../assets/fonts/gothampro_light.ttf');
+    font-family: 'GothamL'; 
+}
+
+@font-face {
+    src: url('../assets/fonts/gothampro.ttf');
+    font-family: 'GothamM'; 
+}

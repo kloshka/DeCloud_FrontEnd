@@ -1,0 +1,10 @@
+.upload__button {
+    background: white;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Gotham Pro";
+    font-size: 14px;
+}

@@ -1,0 +1,8 @@
+  
+  .history-date__download-btn {
+    background: url('../../../images/downloadAll.svg') no-repeat center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }

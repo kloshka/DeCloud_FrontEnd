@@ -1,0 +1,12 @@
+.history-date__item {
+    position: relative;
+    background: #F5F5F5;
+    width: 120px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+  }

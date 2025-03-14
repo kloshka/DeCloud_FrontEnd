@@ -1,0 +1,9 @@
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 38px;
+    font-family: GothamL;
+    line-height: 30px;
+    font-size: 16px;
+    row-gap: 29px;
+}

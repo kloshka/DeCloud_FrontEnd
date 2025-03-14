@@ -1,0 +1,8 @@
+.history-date__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px 90px;
+    padding: 0;
+    list-style: none;
+  }

@@ -1,0 +1,20 @@
+.history-date__actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    gap: 5px;
+  }
+
+.history-date__actions button {
+width: 22px;
+height: 22px;
+border: none;
+background: white;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

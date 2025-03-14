@@ -1,0 +1,3 @@
+.gallery__item:hover .gallery__cross-icon:hover {
+    filter: brightness(0.7);
+}
