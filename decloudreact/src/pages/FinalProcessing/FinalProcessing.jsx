@@ -5,7 +5,7 @@ import Loader from '../../components/Loader';
 
 function FinalProcessing() {
     return (
-        <div className="body">
+        <div className="body_final">
             <Logo />
             <div className="text">Обрабатываем ваши изображения...</div>
             <Loader />

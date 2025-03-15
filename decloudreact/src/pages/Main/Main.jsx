@@ -4,10 +4,10 @@ import Section from "../../components/Section";
 
 const Main = () => {
   return (
-    <>
+    <div className="body_main">
       <Header />
       <Section />
-    </>
+    </div>
   );
 };
 

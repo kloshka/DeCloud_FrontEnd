@@ -24,6 +24,16 @@
 @import url("../../components/blocks/upload/__icon/upload__icon.css");
 @import url("../../components/blocks/upload/__input/upload__input.css");
 @import url("../../components/blocks/upload/__text/upload__text.css");
+.upload__error-message {
+  color: #ff4444;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.upload_dragover {
+  border: 2px dashed #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+}
 
 /* Блок info */
 @import url("../../components/blocks/info/info.css");
@@ -34,9 +44,6 @@
 @import url("../../components/blocks/info/__steps-title/info__steps-title.css");
 @import url("../../components/blocks/info/__steps-container/info__steps-container.css");
 
-
-body {
-    margin: 0;
-    min-width: 1100px;
+.body_main{
 
 }

@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 const Section = () => {
   return (
     <section className="section">
@@ -10,16 +12,58 @@ const Section = () => {
 
 // Компонент для блока загрузки файлов
 const UploadBlock = () => {
+  const navigate = useNavigate();
+  const [error, setError] = useState('');
+  const [dragActive, setDragActive] = useState(false);
+
   const handleFileUpload = (e) => {
-    // Логика обработки файла
-    const file = e.target.files[0];
-    console.log('Selected file:', file);
+    const files = Array.from(e.target.files || e.dataTransfer.files);
+    const validTypes = ['image/jpeg', 'image/png', 'image/webp'];
+
+    // Сброс предыдущих ошибок
+    setError('');
+
+    // Валидация файлов
+    const invalidFiles = files.filter(file => 
+      !validTypes.includes(file.type)
+    );
+
+    if (invalidFiles.length > 0) {
+      setError('Поддерживаются только JPG, PNG и WEBP форматы');
+      return;
+    }
+
+    if (files.length === 0) return;
+
+    // Перенаправление на страницу обработки
+    navigate('/processing', { 
+      state: { files: files.slice(0, 9) }
+    });
+  };
+
+  // Обработчики drag and drop
+  const handleDrag = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDragActive(e.type === 'dragenter' || e.type === 'dragover');
   };
 
   return (
-    <label className="upload">
+    <label 
+      className={`upload ${dragActive ? 'upload_dragover' : ''}`}
+      onDragEnter={handleDrag}
+      onDragLeave={handleDrag}
+      onDragOver={handleDrag}
+      onDrop={(e) => {
+        handleDrag(e);
+        handleFileUpload(e);
+      }}
+    >
+      {/* Весь исходный HTML остается без изменений */}
       <input 
         type="file" 
+        multiple
+        accept="image/jpeg, image/png, image/webp"
         className="upload__input" 
         onChange={handleFileUpload}
         style={{ display: 'none' }} 
@@ -31,6 +75,13 @@ const UploadBlock = () => {
       />
       <div className="upload__button">ВЫБЕРИТЕ ФАЙЛЫ</div>
       <p className="upload__text">или перетащите файл сюда</p>
+
+      {/* Добавляем вывод ошибок без изменения основной структуры */}
+      {error && (
+        <div className="upload__error-message">
+          ⚠️ {error}
+        </div>
+      )}
     </label>
   );
 };
