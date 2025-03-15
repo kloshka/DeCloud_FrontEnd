@@ -3,7 +3,7 @@
 }
 
 .info__feature::before{
-    content:url("../images/emojione_white-heavy-check-mark.svg");
+    content:url("../../../../assets/images/emojione_white-heavy-check-mark.svg");
     display: inline-block; 
     vertical-align: middle; 
     margin-right: 8px; 

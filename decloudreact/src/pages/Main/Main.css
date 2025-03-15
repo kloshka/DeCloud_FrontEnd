@@ -1,0 +1,42 @@
+/* Блок header */
+@import url("../../components/blocks/header/header.css");
+
+/* Блок logo */
+@import url("../../components/blocks/logo/logo.css");
+@import url("../../components/blocks/logo/__text/logo__text.css");
+
+/* Блок nav */
+@import url("../../components/blocks/nav/nav.css");
+@import url("../../components/blocks/nav/__item/nav__item.css");
+
+/* Блок authentication */
+@import url("../../components/blocks/authentication/authentication.css");
+@import url("../../components/blocks/authentication/__link/authentication__link.css");
+@import url("../../components/blocks/authentication/__link/_colored/authentication__link_colored.css");
+
+/* Блок section */
+@import url("../../components/blocks/section/section.css");
+@import url("../../components/blocks/section/__title/section__title.css");
+
+/* Блок upload */
+@import url("../../components/blocks/upload/upload.css");
+@import url("../../components/blocks/upload/__button/upload__button.css");
+@import url("../../components/blocks/upload/__icon/upload__icon.css");
+@import url("../../components/blocks/upload/__input/upload__input.css");
+@import url("../../components/blocks/upload/__text/upload__text.css");
+
+/* Блок info */
+@import url("../../components/blocks/info/info.css");
+@import url("../../components/blocks/info/__description/info__description.css");
+@import url("../../components/blocks/info/__features/info__features.css");
+@import url("../../components/blocks/info/__feature/feature.css");
+@import url("../../components/blocks/info/__steps/info__steps.css");
+@import url("../../components/blocks/info/__steps-title/info__steps-title.css");
+@import url("../../components/blocks/info/__steps-container/info__steps-container.css");
+
+
+body {
+    margin: 0;
+    min-width: 1100px;
+
+}
