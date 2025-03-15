@@ -1,0 +1,57 @@
+/* Блок header */
+@import url("../../components/blocks/header/header.css");
+
+/* Блок logo */
+@import url("../../components/blocks/logo/logo.css");
+@import url("../../components/blocks/logo/__text/logo__text.css");
+
+/* Блок nav */
+@import url("../../components/blocks/nav/nav.css");
+@import url("../../components/blocks/nav/__item/nav__item.css");
+
+/* Блок authentication */
+@import url("../../components/blocks/authentication/authentication.css");
+@import url("../../components/blocks/authentication/__link/authentication__link.css");
+@import url("../../components/blocks/authentication/__link/_colored/authentication__link_colored.css");
+
+/* Блок section */
+@import url("../../components/blocks/section/section.css");
+@import url("../../components/blocks/section/__title/section__title.css");
+
+
+/* Блок download */
+@import url('../../components/blocks/download/download.css');
+@import url('../../components/blocks/download/__button/download__button.css');
+@import url('../../components/blocks/download/__icon/download__icon.css');
+
+/* Блок continue-area */
+@import url('../../components/blocks/continue-area/continue-area.css');
+@import url('../../components/blocks/continue-area/__text/continue-area__text.css');
+
+/* Блок back-to-main */
+@import url('../../components/blocks/back-to-main/back-to-main.css');
+@import url('../../components/blocks/back-to-main/__button/back-to-main__button.css');
+
+.body {
+    margin: 0;
+    min-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.download__text {
+    color: white;
+    font-size: 1.1rem;
+    user-select: none;
+  }
+
+.download:hover {
+background-color: #0A80D1;
+}
+
+.back-to-main__icon{
+    height: 30px;
+}
+
