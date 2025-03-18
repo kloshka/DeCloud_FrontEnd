@@ -1,6 +1,7 @@
 /* Блок logo */
 @import url("../../components/blocks/logo/logo.css");
 @import url("../../components/blocks/logo/__text/logo__text.css");
+@import url("../../components/blocks/logo/__image/logo__image.css");
 @import url("../../components/blocks/section/__title/section__title.css");
 /* Блок loader */
 @import url('../../components/blocks/loader/loader.css');

@@ -4,6 +4,7 @@
 /* Блок logo */
 @import url("../../components/blocks/logo/logo.css");
 @import url("../../components/blocks/logo/__text/logo__text.css");
+@import url("../../components/blocks/logo/__image/logo__image.css");
 
 /* Блок nav */
 @import url("../../components/blocks/nav/nav.css");
@@ -43,7 +44,3 @@
 @import url("../../components/blocks/info/__steps/info__steps.css");
 @import url("../../components/blocks/info/__steps-title/info__steps-title.css");
 @import url("../../components/blocks/info/__steps-container/info__steps-container.css");
-
-.body_main{
-
-}

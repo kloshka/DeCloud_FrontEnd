@@ -4,6 +4,7 @@
 /* Блок logo */
 @import url("../../components/blocks/logo/logo.css");
 @import url("../../components/blocks/logo/__text/logo__text.css");
+@import url("../../components/blocks/logo/__image/logo__image.css");
 
 /* Блок nav */
 @import url("../../components/blocks/nav/nav.css");
@@ -22,6 +23,8 @@
 @import url("../../components/blocks/gallery/__item/__cross-icon/_hover/gallery__cross-icon_hover.css");
 @import url("../../components/blocks/gallery/__item/__cross-icon/_hover/_hover/gallery__cross-icon_hover_hover.css");
 
+/* Блок backgroung
+@import url("../../components/background.css"); */
 
 /* buttons */
 @import url("../../components/blocks/buttons/buttons.css");

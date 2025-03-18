@@ -1,0 +1,47 @@
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.cloud {
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cloud1 {
+  background-image: url('../assets/images/cloud.svg');
+  top: 15%;
+  left: -5%;
+  width: 60vh;
+  height: 60vh;
+}
+
+.cloud2 {
+  background-image: url('../assets/images/cloud.svg');
+  bottom: -10%;
+  left: 30%;
+  width: 45vh;
+  height: 45vh;
+  opacity: 0.7;
+}
+
+.cloud3 {
+  background-image: url('../assets/images/cloud.svg');
+  top: 10%;
+  right: 25%;
+  width: 20vh;
+  height: 20vh;
+  opacity: 0.5;
+}
+
+.cloud4 {
+  background-image: url('../assets/images/cloud.svg');
+  top: 50%;
+  right: -5%;
+  width: 70vh;
+  height: 70vh;
+  opacity: 0.3;
+}

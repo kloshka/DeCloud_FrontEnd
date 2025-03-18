@@ -1,12 +1,21 @@
-// components/DownloadSection.jsx
 import React from 'react';
 import downloadIcon from '../assets/images/download.svg';
 import ContinueArea from './ContinueArea';
+import { useLocation } from 'react-router-dom';
 
 const DownloadSection = () => {
+  const location = useLocation();
+  const files = location.state?.files || [];
+
   const handleDownload = () => {
-    // Логика для скачивания
-    console.log('Download initiated');
+    files.forEach(file => {
+      const link = document.createElement('a');
+      link.href = file.url;
+      link.download = file.name || 'image.jpg';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
   };
 
   return (

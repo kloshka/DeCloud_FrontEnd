@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import addIcon from '../assets/images/add.svg';
 
-const Buttons = ({ onAddFiles }) => {
+const Buttons = ({ onAddFiles, onProcessFiles }) => {
   const fileInputRef = useRef(null);
 
   const handleFileSelect = (e) => {
@@ -32,7 +32,12 @@ const Buttons = ({ onAddFiles }) => {
         alt="Добавить"
         onClick={() => fileInputRef.current.click()}
       />
-      <button className="buttons__processing">Начать обработку</button>
+      <button 
+        className="buttons__processing"
+        onClick={onProcessFiles}
+      >
+        Начать обработку
+      </button>
     </div>
   );
 };
