@@ -1,7 +1,18 @@
-.buttons{
+/*.buttons{
     margin: 40px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 40px;
+}*/
+.buttons {
+    position: fixed; /* Фиксированное позиционирование */
+    top: 650px;       /* Прижать к нижнему краю */
+    left: 0;         /* Растянуть на всю ширину */
+    right: 0;
+    margin: 0;       /* Обнуляем верхний отступ */
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    z-index: 100;      /* Поднять над другими элементами */
 }

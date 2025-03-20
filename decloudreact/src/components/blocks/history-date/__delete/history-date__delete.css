@@ -1,4 +1,4 @@
 .history-date__delete::before {
-    content: url('../images/delete.svg');
+    content: url('../../../../assets/images/delete.svg');
   }
   

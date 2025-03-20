@@ -4,7 +4,7 @@ import Section from "../../components/Section";
 
 const Main = () => {
   return (
-    <div className="body_main">
+    <div className="body">
       <Header />
       <Section />
     </div>

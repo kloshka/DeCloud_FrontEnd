@@ -92,3 +92,47 @@ html, body {
 .buttons__cross:hover {
   transform: scale(1.1);
 }
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery-pagination__button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gallery-pagination__button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.gallery-pagination__button:not(:disabled):hover {
+  background-color: #0056b3;
+}
+
+.gallery-pagination__info {
+  font-size: 14px;
+  color: #666666;
+}
+.gallery__placeholder {
+  width: 100%;
+  height: 200px; /* Высота плейсхолдера */
+  background-color: #f0f0f0; /* Серый фон */
+  border-radius: 8px;
+}

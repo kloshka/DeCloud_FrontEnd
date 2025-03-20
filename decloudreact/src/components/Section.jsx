@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 const Section = () => {
   return (
     <section className="section">
@@ -10,43 +11,33 @@ const Section = () => {
   );
 };
 
-// Компонент для блока загрузки файлов
-const UploadBlock = () => {
+const UploadBlock = React.memo(() => {
   const navigate = useNavigate();
   const [error, setError] = useState('');
   const [dragActive, setDragActive] = useState(false);
 
-  const handleFileUpload = (e) => {
+  const handleFileUpload = useCallback((e) => {
     const files = Array.from(e.target.files || e.dataTransfer.files);
     const validTypes = ['image/jpeg', 'image/png', 'image/webp'];
 
-    // Сброс предыдущих ошибок
     setError('');
-
-    // Валидация файлов
-    const invalidFiles = files.filter(file => 
-      !validTypes.includes(file.type)
-    );
+    const invalidFiles = files.filter(file => !validTypes.includes(file.type));
 
     if (invalidFiles.length > 0) {
       setError('Поддерживаются только JPG, PNG и WEBP форматы');
       return;
     }
 
-    if (files.length === 0) return;
+    if (files.length > 0) {
+      navigate('/processing', { state: { files } }); // Убрали .slice(0, 9)
+    }
+  }, [navigate]);
 
-    // Перенаправление на страницу обработки
-    navigate('/processing', { 
-      state: { files: files.slice(0, 9) }
-    });
-  };
-
-  // Обработчики drag and drop
-  const handleDrag = (e) => {
+  const handleDrag = useCallback((e) => {
     e.preventDefault();
     e.stopPropagation();
     setDragActive(e.type === 'dragenter' || e.type === 'dragover');
-  };
+  }, []);
 
   return (
     <label 
@@ -59,7 +50,6 @@ const UploadBlock = () => {
         handleFileUpload(e);
       }}
     >
-      {/* Весь исходный HTML остается без изменений */}
       <input 
         type="file" 
         multiple
@@ -72,22 +62,16 @@ const UploadBlock = () => {
         src={require('../assets/images/upload.svg').default}
         className="upload__icon" 
         alt="Загрузите изображения"
+        loading="lazy"
       />
       <div className="upload__button">ВЫБЕРИТЕ ФАЙЛЫ</div>
       <p className="upload__text">или перетащите файл сюда</p>
-
-      {/* Добавляем вывод ошибок без изменения основной структуры */}
-      {error && (
-        <div className="upload__error-message">
-          ⚠️ {error}
-        </div>
-      )}
+      {error && <div className="upload__error-message">⚠️ {error}</div>}
     </label>
   );
-};
+});
 
-// Компонент для информационного блока
-const InfoBlock = () => {
+const InfoBlock = React.memo(() => {
   return (
     <div className="info">
       <div className="info__description">
@@ -105,6 +89,7 @@ const InfoBlock = () => {
         src={require('../assets/images/icons.svg').default} 
         className="info__image" 
         alt="Преимущества"
+        loading="lazy"
       />
 
       <div className="info__steps-container">
@@ -117,6 +102,6 @@ const InfoBlock = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Section;

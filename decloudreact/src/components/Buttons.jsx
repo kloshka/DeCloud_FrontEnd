@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, memo, useCallback } from 'react';
 import addIcon from '../assets/images/add.svg';
 
-const Buttons = ({ onAddFiles, onProcessFiles }) => {
+const Buttons = memo(({ onAddFiles, onProcessFiles }) => {
   const fileInputRef = useRef(null);
 
-  const handleFileSelect = (e) => {
+  const handleFileSelect = useCallback((e) => {
     const newFiles = Array.from(e.target.files);
     const validTypes = ['image/jpeg', 'image/png', 'image/webp'];
     
@@ -14,7 +14,7 @@ const Buttons = ({ onAddFiles, onProcessFiles }) => {
     
     onAddFiles(filteredFiles);
     e.target.value = null;
-  };
+  }, [onAddFiles]);
 
   return (
     <div className="buttons">
@@ -31,6 +31,7 @@ const Buttons = ({ onAddFiles, onProcessFiles }) => {
         className="buttons__cross" 
         alt="Добавить"
         onClick={() => fileInputRef.current.click()}
+        loading="lazy"
       />
       <button 
         className="buttons__processing"
@@ -40,6 +41,6 @@ const Buttons = ({ onAddFiles, onProcessFiles }) => {
       </button>
     </div>
   );
-};
+});
 
 export default Buttons;

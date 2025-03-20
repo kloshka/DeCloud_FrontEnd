@@ -1,4 +1,4 @@
 .history-date__download::before {
-    content: url('../images/downloadmini.svg');
+    content: url('../../../../assets/images/downloadmini.svg');
   }
   

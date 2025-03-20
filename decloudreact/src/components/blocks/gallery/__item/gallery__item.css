@@ -1,6 +1,6 @@
 .gallery__item {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background-color: gainsboro;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
