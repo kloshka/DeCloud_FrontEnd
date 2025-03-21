@@ -1,5 +1,5 @@
 import React from 'react';
-import downloadIcon from '../assets/images/download.svg';
+import downloadIcon from '../../assets/images/download.svg';
 import ContinueArea from './ContinueArea';
 import { useLocation } from 'react-router-dom';
 

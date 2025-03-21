@@ -1,9 +1,7 @@
 import React from 'react';
-import Header from '../../components/Header';
-import HistoryDate from '../../components/HistoryDate';
+import Header from '../../components/Header/Header';
+import HistoryDate from '../../components/History/HistoryDate';
 import sputnikImage from '../../assets/images/sputnik.jpg';
-
-import './History.css';
 
 const HistoryPage = () => {
     const historyData = [

@@ -1,0 +1,16 @@
+/* Блок header */
+@import url("../../components/blocks/header/header.css");
+
+/* Блок logo */
+@import url("../../components/blocks/logo/logo.css");
+@import url("../../components/blocks/logo/__text/logo__text.css");
+@import url("../../components/blocks/logo/__image/logo__image.css");
+
+/* Блок nav */
+@import url("../../components/blocks/nav/nav.css");
+@import url("../../components/blocks/nav/__item/nav__item.css");
+
+/* Блок authentication */
+@import url("../../components/blocks/authentication/authentication.css");
+@import url("../../components/blocks/authentication/__link/authentication__link.css");
+@import url("../../components/blocks/authentication/__link/_colored/authentication__link_colored.css");

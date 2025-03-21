@@ -1,5 +1,6 @@
 import React, { useRef, memo, useCallback } from 'react';
-import addIcon from '../assets/images/add.svg';
+import addIcon from '../../../assets/images/add.svg';
+import "./Buttons.css"
 
 const Buttons = memo(({ onAddFiles, onProcessFiles }) => {
   const fileInputRef = useRef(null);

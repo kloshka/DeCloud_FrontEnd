@@ -1,6 +1,5 @@
-import "./Main.css";
-import Header from "../../components/Header";
-import Section from "../../components/Section";
+import Header from "../../components/Header/Header";
+import Section from "../../components/Section/Section";
 
 const Main = () => {
   return (

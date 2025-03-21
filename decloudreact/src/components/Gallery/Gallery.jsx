@@ -1,6 +1,8 @@
 import React, { useEffect, useState, memo, useCallback } from 'react';
 import GalleryItem from './GalleryItem';
-import { compressImage } from '../utils/imageUtils.jsx';
+import { compressImage } from '../../utils/ImageUtils.jsx';
+import "./Gallery.css";
+
 
 const ITEMS_PER_PAGE = 12;
 
@@ -70,7 +72,7 @@ const Gallery = memo(({ files, onRemove }) => {
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 0))}
             disabled={currentPage === 0}
           >
-            Previous
+            Назад
           </button>
           
           <span className="gallery-pagination__info">
@@ -82,7 +84,7 @@ const Gallery = memo(({ files, onRemove }) => {
             onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages - 1))}
             disabled={currentPage === totalPages - 1}
           >
-            Next
+            Вперёд
           </button>
         </div>
       )}

@@ -12,7 +12,7 @@
 }
 
 .cloud1 {
-  background-image: url('../assets/images/cloud.svg');
+  background-image: url('../../assets/images/cloud.svg');
   top: 15%;
   left: -5%;
   width: 60vh;
@@ -20,7 +20,7 @@
 }
 
 .cloud2 {
-  background-image: url('../assets/images/cloud.svg');
+  background-image: url('../../assets/images/cloud.svg');
   bottom: -10%;
   left: 30%;
   width: 45vh;
@@ -29,7 +29,7 @@
 }
 
 .cloud3 {
-  background-image: url('../assets/images/cloud.svg');
+  background-image: url('../../assets/images/cloud.svg');
   top: 10%;
   right: 25%;
   width: 20vh;
@@ -38,7 +38,7 @@
 }
 
 .cloud4 {
-  background-image: url('../assets/images/cloud.svg');
+  background-image: url('../../assets/images/cloud.svg');
   top: 50%;
   right: -5%;
   width: 70vh;

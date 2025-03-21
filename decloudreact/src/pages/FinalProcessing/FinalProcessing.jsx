@@ -1,9 +1,9 @@
 import './FinalProcessing.css';
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Logo from '../../components/Logo';
-import Loader from '../../components/Loader';
-import BackGroundCloud from "../../components/BackGroundCloud";
+import Logo from '../../components/Header/Logo';
+import Loader from '../../components/Common/Loader/Loader';
+import BackGroundCloud from "../../components/Background/BackGroundCloud";
 
 function FinalProcessing() {
     const navigate = useNavigate();

@@ -49,7 +49,7 @@ const UploadBlock = React.memo(() => {
         style={{ display: 'none' }} 
       />
       <img 
-        src={require('../assets/images/upload.svg').default}
+        src={require('../../assets/images/upload.svg').default}
         className="upload__icon" 
         alt="Загрузите изображения"
         loading="lazy"

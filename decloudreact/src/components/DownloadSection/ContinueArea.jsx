@@ -1,7 +1,8 @@
 // components/ContinueArea.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import backIcon from '../assets/images/back-to-main__icon.svg';
+import backIcon from '../../assets/images/back-to-main__icon.svg';
+import "./DownloadSection.css"
 
 const ContinueArea = () => {
   return (

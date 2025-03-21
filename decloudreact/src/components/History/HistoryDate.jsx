@@ -1,4 +1,5 @@
 import React from 'react';
+import "./History.css"
 
 const HistoryDate = ({ date, images }) => {
   return (

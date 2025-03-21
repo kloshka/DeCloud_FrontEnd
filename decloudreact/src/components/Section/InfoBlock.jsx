@@ -15,7 +15,7 @@ const InfoBlock = React.memo(() => {
       </ul>
 
       <img 
-        src={require('../assets/images/icons.svg').default} 
+        src={require('../../assets/images/icons.svg').default} 
         className="info__image" 
         alt="Преимущества"
         loading="lazy"

@@ -1,6 +1,7 @@
 import React from 'react';
 import UploadBlock from './UploadBlock';
 import InfoBlock from './InfoBlock';
+import './Section.css';
 
 const Section = () => {
   return (
