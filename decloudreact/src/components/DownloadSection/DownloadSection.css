@@ -16,14 +16,7 @@
 @import url('../../components/blocks/back-to-main/back-to-main.css');
 @import url('../../components/blocks/back-to-main/__button/back-to-main__button.css');
 
-.body {
-    margin: 0;
-    min-width: 1100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
+
 
 .download__text {
     color: white;

@@ -1,4 +1,3 @@
-import './FinalProcessing.css';
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../../components/Header/Logo';
@@ -31,7 +30,7 @@ function FinalProcessing() {
     }, [navigate]);
 
     return (
-        <div className="body_final">
+        <div className="processing-page  body_final">
             <BackGroundCloud />
             <Logo />
             <div className="text">Обрабатываем ваши изображения...</div>

@@ -5,6 +5,7 @@ import FinalProcessing from "./pages/FinalProcessing/FinalProcessing";
 import Processing from './pages/Processing/Processing';
 import DownloadPage from "./pages/DownloadPage/DownloadPage";
 import History from "./pages/History/History";
+import "./assets/global.css";
 
 const App = () => {
   return (
