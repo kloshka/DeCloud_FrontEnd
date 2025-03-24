@@ -4,4 +4,8 @@
     column-gap: 30px;
     font-family: GothamL;
     font-size: 24px;
+    position: absolute;
+    left: 48%;
+    transform: translateX(-50%);
+
 }

@@ -76,7 +76,7 @@ const Gallery = memo(({ files, onRemove }) => {
           </button>
           
           <span className="gallery-pagination__info">
-            Page {currentPage + 1} of {totalPages}
+            страница {currentPage + 1} из {totalPages}
           </span>
 
           <button
