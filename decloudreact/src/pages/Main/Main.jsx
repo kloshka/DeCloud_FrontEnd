@@ -1,9 +1,9 @@
-import Header from "../../components/Header/Header";
 import Section from "../../components/Section/Section";
+import Header from "../../components/Header/Header";
 
 const Main = () => {
   return (
-    <div className="body">
+    <div className="processing-page">
       <Header />
       <Section />
     </div>
