@@ -25,26 +25,35 @@ const Processing = () => {
   };
 
   const handleProcessFiles = async () => {
-    const formData = new FormData();
-    files.forEach(file => formData.append('files', file));
-
     try {
-      const response = await fetch('/api/process-files', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!response.ok) throw new Error('Ошибка при отправке файлов');
-
-      const result = await response.json();
-      console.log('Файлы успешно отправлены:', result);
-
-      // Переход на страницу после успешной отправки
-      navigate('/final-processing');
+      const presignedResponse = await fetch('http://81.163.31.53/v1/api/get-presigned-url/');
+      if (!presignedResponse.ok) throw new Error('Ошибка при получении presigned URL');
+      const { task_id } = await presignedResponse.json();
+      console.log('Получен task_id:', task_id);
+  
+      for (const file of files) {
+        const formData = new FormData();
+        formData.append('file', file);
+  
+        const uploadResponse = await fetch(`http://81.163.31.53/v1/api/mock/image/upload/?task_id=${task_id}`, {
+          method: 'POST',
+          body: formData,
+        });
+  
+        if (!uploadResponse.ok) {
+          throw new Error(`Ошибка при загрузке файла: ${file.name}`);
+        }
+  
+        console.log(`${file.name} успешно загружен`);
+      }
+  
+      navigate('/final-processing', { state: { task_id } });
+  
     } catch (error) {
       console.error('Ошибка:', error.message);
     }
   };
+  
 
   return (
     <div className="processing-page">
