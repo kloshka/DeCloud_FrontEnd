@@ -1,8 +1,8 @@
 .buttons__processing{
-    width: 295px;
-    height: 90px;
+    width: 18.5rem;
+    height: 5.625rem;
     background: linear-gradient(to bottom, #0D99FF, #5ABAFF);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: GothamM;
     color: white;
     border: 0px;

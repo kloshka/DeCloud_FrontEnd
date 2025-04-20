@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: min(70px, calc(100vh / 100 * 7.7));
+    height: min(70px, calc(100vh / 100 * 9.7));
     background: white;
     display: flex;
     align-items: center; 

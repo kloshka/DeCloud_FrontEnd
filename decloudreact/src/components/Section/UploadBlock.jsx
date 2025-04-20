@@ -11,16 +11,22 @@ const UploadBlock = React.memo(() => {
     const validTypes = ['image/jpeg', 'image/png', 'image/webp'];
 
     setError('');
-    const invalidFiles = files.filter(file => !validTypes.includes(file.type));
 
+    // Проверка количества файлов
+    if (files.length !== 2) {
+      setError('Пожалуйста, загрузите ровно два изображения');
+      return;
+    }
+
+    // Проверка типов файлов
+    const invalidFiles = files.filter(file => !validTypes.includes(file.type));
     if (invalidFiles.length > 0) {
       setError('Поддерживаются только JPG, PNG и WEBP форматы');
       return;
     }
 
-    if (files.length > 0) {
-      navigate('/processing', { state: { files } });
-    }
+    // Если все проверки пройдены
+    navigate('/processing', { state: { files } });
   }, [navigate]);
 
   const handleDrag = useCallback((e) => {
@@ -55,7 +61,7 @@ const UploadBlock = React.memo(() => {
         loading="lazy"
       />
       <div className="upload__button">ВЫБЕРИТЕ ФАЙЛЫ</div>
-      <p className="upload__text">или перетащите файл сюда</p>
+      <p className="upload__text">перетащите ровно два файла сюда</p>
       {error && <div className="upload__error-message">⚠️ {error}</div>}
     </label>
   );
