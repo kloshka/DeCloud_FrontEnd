@@ -2,7 +2,7 @@ const MAX_WIDTH = 800;
 const MAX_HEIGHT = 600;
 const QUALITY = 0.7;
 
-export const compressImage = (file) => {
+export const compressImage =(file) => {
   return new Promise((resolve) => {
     const img = new Image();
     const reader = new FileReader();
