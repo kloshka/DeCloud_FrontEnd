@@ -18,7 +18,7 @@ function FinalProcessing() {
         const intervalId = setInterval(async () => {
             try {
                 // 1. Проверяем статус обработки
-                const statusResponse = await fetch(`http://81.163.31.53/v1/api/mock/image/status/${task_id}/`);
+                const statusResponse = await fetch(`http://81.163.31.53/v1/api/image/status/{task_id}/`);
                 if (!statusResponse.ok) throw new Error('Ошибка при получении статуса обработки');
                 const statusData = await statusResponse.json();
                 console.log('Статус обработки:', statusData);
@@ -27,7 +27,7 @@ function FinalProcessing() {
                     clearInterval(intervalId);
 
                     // 2. Получаем обработанные файлы
-                    const processedResponse = await fetch(`http://81.163.31.53/v1/api/mock/image/get-processed/${task_id}/`);
+                    const processedResponse = await fetch(`http://81.163.31.53/v1/api/image/get-processed/{task_id}/`);
                     if (!processedResponse.ok) throw new Error('Ошибка при получении обработанных файлов');
                     const processedData = await processedResponse.json();
                     console.log('Обработанные файлы:', processedData);

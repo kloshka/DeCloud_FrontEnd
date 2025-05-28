@@ -35,7 +35,7 @@ const Processing = () => {
         const formData = new FormData();
         formData.append('file', file);
   
-        const uploadResponse = await fetch(`http://81.163.31.53/v1/api/mock/image/upload/?task_id=${task_id}`, {
+        const uploadResponse = await fetch(`http://81.163.31.53/v1/api/image/get-processed/{task_id}/`, {
           method: 'POST',
           body: formData,
         });
